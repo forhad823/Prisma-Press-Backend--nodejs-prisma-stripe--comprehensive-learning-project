@@ -1,9 +1,10 @@
 {
   "info": {
-    "_postman_id": "7558f592-cee8-4db0-9085-81438a9256b8",
+    "_postman_id": "ae48a11c-2bfc-4e1a-9e26-c8fd565f1bd5",
     "name": "Prisma Press Backend entire app",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "28720851"
+    "_exporter_id": "53938729",
+    "_collection_link": "https://go.postman.co/collection/53938729-ae48a11c-2bfc-4e1a-9e26-c8fd565f1bd5?source=collection_link"
   },
   "item": [
     {
@@ -16,7 +17,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"name\" : \"Random\",\r\n    \"email\" : \"abc8@gmail.com\",\r\n    \"password\" : \"123456\",\r\n    \"profilePhoto\" : \"www.google.com\"\r\n}",
+              "raw": "{\r\n   \"name\": \"forhad8\",\r\n    \"email\":\"test-8@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"profilePhoto\": \"https://shorturl.at/qNJhZ\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -26,9 +27,15 @@
             "url": {
               "raw": "http://localhost:5000/api/users/register",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "users", "register"]
+              "path": [
+                "api",
+                "users",
+                "register"
+              ]
             }
           },
           "response": []
@@ -43,7 +50,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBhZTA2MzE3LWQxMzUtNGJiZS04NWUwLTE1N2Q1NTA1Y2RmNCIsIm5hbWUiOiJSYW5kb20iLCJlbWFpbCI6ImFiYzhAZ21haWwuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3ODIwNjI1OTcsImV4cCI6MTc4MjE0ODk5N30.JSRwQ2jFH1LFLh5q8DrvAY0p_8ieoUBOcCEjIRT4J9g",
+                "value": "{{supabase_service_role_api_key_0dqo}}",
                 "type": "text",
                 "disabled": true
               }
@@ -55,9 +62,15 @@
             "url": {
               "raw": "http://localhost:5000/api/users/me",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "users", "me"]
+              "path": [
+                "api",
+                "users",
+                "me"
+              ]
             }
           },
           "response": []
@@ -79,9 +92,15 @@
             "url": {
               "raw": "http://localhost:5000/api/users/my-profile",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "users", "my-profile"]
+              "path": [
+                "api",
+                "users",
+                "my-profile"
+              ]
             }
           },
           "response": []
@@ -98,7 +117,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"email\" : \"abc6@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+              "raw": "{\r\n    \"email\" : \"test-5@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -108,9 +127,15 @@
             "url": {
               "raw": "http://localhost:5000/api/auth/login",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "auth", "login"]
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
             }
           },
           "response": []
@@ -127,9 +152,15 @@
             "url": {
               "raw": "http://localhost:5000/api/auth/refresh-token",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "auth", "refresh-token"]
+              "path": [
+                "api",
+                "auth",
+                "refresh-token"
+              ]
             }
           },
           "response": []
@@ -146,7 +177,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"title\": \"My Second Premium Post\",\r\n  \"content\": \"Content of the post goes here.\",\r\n  \"thumbnail\": \"https://example.com/thumbnail.jpg\",\r\n  \"isFeatured\": false,\r\n  \"isPremium\" : true,\r\n  \"status\": \"PUBLISHED\",\r\n  \"tags\": [\"typescript\", \"prisma\", \"express\"]\r\n}",
+              "raw": "{\r\n  \"title\": \"test-2's Premium post\",\r\n  \"content\": \"Premium content of the post goes here.\",\r\n  \"thumbnail\": \"https://example.com/thumbnail.jpg\",\r\n  \"isFeatured\": true,\r\n  \"isPremium\": true,\r\n  \"status\": \"PUBLISHED\",\r\n  \"tags\": [\"typescript\", \"prisma\", \"express\"]\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -156,9 +187,14 @@
             "url": {
               "raw": "http://localhost:5000/api/posts",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts"]
+              "path": [
+                "api",
+                "posts"
+              ]
             }
           },
           "response": []
@@ -176,21 +212,25 @@
               "raw": "{\r\n  \"title\": \"My First Post\",\r\n  \"content\": \"Content of the post goes here.\",\r\n  \"thumbnail\": \"https://example.com/thumbnail.jpg\",\r\n  \"isFeatured\": false,\r\n  \"status\": \"PUBLISHED\",\r\n  \"tags\": [\"typescript\", \"prisma\", \"express\"]\r\n}"
             },
             "url": {
-              "raw": "http://localhost:5000/api/posts",
+              "raw": "http://localhost:5000/api/posts?title=title Ronaldo nazario&tags=[\"typescript\"]",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts"],
+              "path": [
+                "api",
+                "posts"
+              ],
               "query": [
-                {
-                  "key": "title",
-                  "value": "Christiano Ronaldo",
-                  "disabled": true
-                },
                 {
                   "key": "content",
                   "value": "Ronaldo",
                   "disabled": true
+                },
+                {
+                  "key": "title",
+                  "value": "title Ronaldo nazario"
                 },
                 {
                   "key": "searchTerm",
@@ -224,8 +264,7 @@
                 },
                 {
                   "key": "tags",
-                  "value": "[\"typescript\"]",
-                  "disabled": true
+                  "value": "[\"typescript\"]"
                 }
               ]
             }
@@ -245,11 +284,17 @@
               "raw": "{\r\n  \"title\": \"My First Post\",\r\n  \"content\": \"Content of the post goes here.\",\r\n  \"thumbnail\": \"https://example.com/thumbnail.jpg\",\r\n  \"isFeatured\": false,\r\n  \"status\": \"PUBLISHED\",\r\n  \"tags\": [\"typescript\", \"prisma\", \"express\"]\r\n}"
             },
             "url": {
-              "raw": "http://localhost:5000/api/posts/03703987-bf1b-4d2b-8916-b28949314c26",
+              "raw": "http://localhost:5000/api/posts/6e7e418e-487d-4925-9c6a-e72a4c5f8424",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts", "03703987-bf1b-4d2b-8916-b28949314c26"]
+              "path": [
+                "api",
+                "posts",
+                "6e7e418e-487d-4925-9c6a-e72a4c5f8424"
+              ]
             }
           },
           "response": []
@@ -269,9 +314,15 @@
             "url": {
               "raw": "http://localhost:5000/api/posts/my-posts",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts", "my-posts"]
+              "path": [
+                "api",
+                "posts",
+                "my-posts"
+              ]
             }
           },
           "response": []
@@ -283,7 +334,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"title\": \"My Second Post And Updated\"\r\n}",
+              "raw": "{\r\n  \"title\": \"My First Post And Updated\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -291,11 +342,17 @@
               }
             },
             "url": {
-              "raw": "http://localhost:5000/api/posts/30c090b8-f467-4c3f-94c7-3b07e71f4f19",
+              "raw": "http://localhost:5000/api/posts/ee52bb25-2207-4ce0-9064-3fb604c236b9",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts", "30c090b8-f467-4c3f-94c7-3b07e71f4f19"]
+              "path": [
+                "api",
+                "posts",
+                "ee52bb25-2207-4ce0-9064-3fb604c236b9"
+              ]
             }
           },
           "response": []
@@ -306,11 +363,17 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/posts/3a707ffb-3c5f-4090-9d8c-3ee6f1dfedbc",
+              "raw": "http://localhost:5000/api/posts/e4be884f-31b7-4214-8dc6-5ed1f9183d2c",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts", "3a707ffb-3c5f-4090-9d8c-3ee6f1dfedbc"]
+              "path": [
+                "api",
+                "posts",
+                "e4be884f-31b7-4214-8dc6-5ed1f9183d2c"
+              ]
             }
           },
           "response": []
@@ -330,9 +393,15 @@
             "url": {
               "raw": "http://localhost:5000/api/posts/stats",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "posts", "stats"]
+              "path": [
+                "api",
+                "posts",
+                "stats"
+              ]
             }
           },
           "response": []
@@ -349,7 +418,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"postId\" : \"42ab9256-4d44-40f7-91ad-01688283e3ec\",\r\n  \"authorId\" : \"e6ee5b42-315d-49bf-a775-f5c1d193849e\",\r\n  \"content\" : \"My Third Comment\"\r\n}",
+              "raw": "{\r\n  \"content\" : \"My second Comment for the post\",\r\n  \"postId\" : \"6e7e418e-487d-4925-9c6a-e72a4c5f8424\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -359,9 +428,175 @@
             "url": {
               "raw": "http://localhost:5000/api/comments",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "comments"]
+              "path": [
+                "api",
+                "comments"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Comment by AuthorId",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\" : \"My first Comment for the post\",\r\n  \"postId\" : \"0dac5a2e-57b1-48b8-8fdf-63a85014c252\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/comments/author/f8b0e299-fd5c-4002-a581-c4bc8c15f1dd",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "author",
+                "f8b0e299-fd5c-4002-a581-c4bc8c15f1dd"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Comments by PostID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/comments/post/6e7e418e-487d-4925-9c6a-e72a4c5f8424",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "post",
+                "6e7e418e-487d-4925-9c6a-e72a4c5f8424"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Comment by Comment Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\" : \"My first Comment for the post\",\r\n  \"postId\" : \"0dac5a2e-57b1-48b8-8fdf-63a85014c252\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/comments/2ab21c98-dfea-4c87-ac31-7cb31929ecaf",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "2ab21c98-dfea-4c87-ac31-7cb31929ecaf"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Comment by comment id",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\" : \"My first Updated Comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/comments/797c0df1-14ae-4148-9c02-c4be4cb03d46",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "797c0df1-14ae-4148-9c02-c4be4cb03d46"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Comment by Comment Id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/comments/797c0df1-14ae-4148-9c02-c4be4cb03d46",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "797c0df1-14ae-4148-9c02-c4be4cb03d46"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Moderate  Comment by Admin",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"REJECT\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/comments/2ab21c98-dfea-4c87-ac31-7cb31929ecaf/moderate",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "comments",
+                "2ab21c98-dfea-4c87-ac31-7cb31929ecaf",
+                "moderate"
+              ]
             }
           },
           "response": []
@@ -379,9 +614,15 @@
             "url": {
               "raw": "http://localhost:5000/api/subscription/status",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "subscription", "status"]
+              "path": [
+                "api",
+                "subscription",
+                "status"
+              ]
             }
           },
           "response": []
@@ -398,9 +639,15 @@
             "url": {
               "raw": "http://localhost:5000/api/subscription/checkout",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "subscription", "checkout"]
+              "path": [
+                "api",
+                "subscription",
+                "checkout"
+              ]
             }
           },
           "response": []
@@ -425,14 +672,44 @@
             "url": {
               "raw": "http://localhost:5000/api/premium",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": [
+                "localhost"
+              ],
               "port": "5000",
-              "path": ["api", "premium"]
+              "path": [
+                "api",
+                "premium"
+              ]
             }
           },
           "response": []
         }
       ]
+    },
+    {
+      "name": "Not found route",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/any-unknown-path",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "any-unknown-path"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "supabase_service_role_api_key_0dqo",
+      "secret": true
     }
   ]
 }
