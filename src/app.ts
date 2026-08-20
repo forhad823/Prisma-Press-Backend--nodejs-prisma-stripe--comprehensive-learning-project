@@ -23,14 +23,20 @@ app.use(
   }),
 );
 
-// const endpointSecret = config.stripe_webhook_secret;
+// ─── STRIPE WEBHOOK — must receive RAW body BEFORE express.json() parses it ──
+// Stripe needs to verify the request with its own HMAC signature.
+// If express.json() runs first, the raw buffer is lost and verification fails.
+app.use(
+  "/api/subscription/webhook",
+  express.raw({ type: "application/json" })
+);
 
-app.use("/api/subscription/webhook", express.raw({ type: "application/json" }));
-
+// ─── Standard body parsers (applied after the raw webhook route) ──────────────
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// ------------- initial server check -------------------
 app.get("/", async (req: Request, res: Response) => {
   res.send("Hello World");
 });
